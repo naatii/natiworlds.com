@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+#header {
+    overflow: hidden;
+    height: 22em;
+    margin-bottom: 4em;
+    position: relative;
+    z-index: 2;
+}
+
+#header:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background: url("header.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#logo {
+    border: 1px solid black;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    left: 1%;
+    top: 1%;
+    z-index: 3;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50% -50%);
+    width: 100%;
+    text-transform: uppercase;
+    background-color: rgb(255, 235, 205);
+    border: 1px solid black;
+    box-shadow: 0 0 4px black;
+    text-align: center;
+    color: black;
+    padding: 12px;
+    z-index: 2;
+}
+
+nav {
+    position: absolute;
+    width: 97%;
+    top: 30%;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    background: rgb(255, 235, 205);
+    box-shadow: 0 0 10px black;
+    border: 1px solid black;
+    padding: .5em 0;
+    right: 0;
+    z-index: 2;
+}
+
+li {
+    list-style: none;
+    padding: 0 2em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    transition: all .5s;
+}
+
+a:hover {
+    color: blueviolet;
+    padding-right: 1em;
+}
+
+.container {
+    z-index: 10000;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*Distribución en filas y sino cabe siguiente fila*/
+    text-align: center;
+    /* justify-content: space-around; Espacio entre las capas*/
+    justify-content: center;
+    /*centramos las capas dentro del contenedor*/
+    margin: -40px 0;
+
+}
+
+.container .card {
+    background-color: burlywood;
+    box-shadow: 0 0 4px black;
+    color: black;
+    border: 1px solid burlywood;
+    border-radius: 8px;
+    padding: 2px;
+    /*Para separar las capas*/
+    width: 25%;
+    min-height: 300px;
+    /*Para las capas que estén casi vacias*/
+    height: auto;
+    margin: 10px;
+}
+
+h2 {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    box-shadow: 0 0 4px black;
+    text-align: center;
+    color: black;
+    padding: 12px;
+    margin: 10px;
+}
+
+
+
+.container div img {
+    width: 70%;
+    border-radius: 15px;
+    max-width: 150px;
+    height: 150px;
+}
+.container div img:hover{
+    animation:  2s normal img;
+}
+@keyframes img{
+    0%{
+        transform: rotateY(0);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(0);
+    }
+}
+
+div figure {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+/*Para el pie*/
+footer{
+    display: flex;
+    align-items: flex-end;
+    align-content: space-between;
+}
+footer div{
+    display: flex;
+    align-items: center;
+    right: -40%;
+    position: relative;
+    
+} 
+
+.nav-inferior{
+    display: flex;
+    justify-content: flex-start;
+    top: 220%;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+.nav-inferior li a:hover{
+    padding-left: 1em;
+}
+
+.card div {
+    justify-content: center;
+    margin-top: 40px;
+}
+
+button{
+    background-color: antiquewhite;
+
+}
+button:hover{
+    animation:  0.5s infinite normal boton;
+
+}
+button a:hover{
+    padding: 0;
+
+}
+
+@keyframes boton{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(10deg);
+        
+    }
+    100%{
+        transform: rotate(0);
+
+    }
+}
