@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -60,7 +61,7 @@ h1 {
     text-shadow: 0 0 10px purple;
 }
 
-nav {
+.nav-superior {
     position: absolute;
     width: 97%;
     top: 30%;
@@ -108,6 +109,10 @@ a:hover {
 }
 
 .container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: burlywood;
     box-shadow: 0 0 4px black;
     color: black;
@@ -118,7 +123,6 @@ a:hover {
     width: 25%;
     min-height: 300px;
     /*Para las capas que estén casi vacias*/
-    height: auto;
     margin: 10px;
 }
 
@@ -129,8 +133,7 @@ h2 {
     color: black;
     padding: 12px;
     margin: 10px;
-    text-shadow: 0 5px 10px purple;
-    border: 1px solid black;
+    text-shadow: 1px 1.5px rgb(133, 1, 133), 0 10px 4px purple;
 }
 
 
@@ -155,49 +158,19 @@ h2 {
         transform: rotateY(0);
     }
 }
-
-div figure {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-}
-
-/*Para el pie*/
-footer{
-    display: flex;
-    align-items: flex-end;
-    align-content: space-between;
-}
-footer div{
-    display: flex;
-    align-items: center;
-    right: -40%;
-    position: relative;
-    
-} 
-
-.nav-inferior{
-    display: flex;
-    justify-content: flex-start;
-    top: 220%;
-    left: 0;
-    z-index: 1;
-}
-
-
-
-.nav-inferior li a:hover{
-    padding-left: 1em;
-}
-
 .card div {
-    justify-content: center;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     margin-top: 40px;
+
 }
 
 button{
     background-color: antiquewhite;
+    width: 50%;
+    margin: 0 auto;
 
 }
 button:hover{
@@ -221,4 +194,57 @@ button a:hover{
         transform: rotate(0);
 
     }
+}
+
+div figure {
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-content: space-between; */
+}
+
+/*Para el pie*/
+.footer{
+    width: 97%;
+    height: 50px;
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgb(255, 235, 205);
+    box-shadow: 0 0 10px black;
+    border: 1px solid black;
+    position: absolute;
+
+
+}
+.footer div{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    
+} 
+
+.nav-inferior{
+    font-size: 1px;
+    display: flex;
+    padding: .5em 0;
+    z-index: 2;
+}
+
+.nav-inferior li {
+    padding:0 10em;
+}
+.nav-inferior li a{
+    font-size: 22px;
+}
+.nav-inferior li a:hover{
+    padding-left: 1em;
+}
+
+
+
+@media screen and(max-width 1024px) {
+    
 }
