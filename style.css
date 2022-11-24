@@ -57,6 +57,7 @@ h1 {
     color: black;
     padding: 12px;
     z-index: 2;
+    text-shadow: 0 0 10px purple;
 }
 
 nav {
@@ -123,12 +124,13 @@ a:hover {
 
 h2 {
     background-color: blanchedalmond;
-    border: 1px solid black;
     box-shadow: 0 0 4px black;
     text-align: center;
     color: black;
     padding: 12px;
     margin: 10px;
+    text-shadow: 0 5px 10px purple;
+    border: 1px solid black;
 }
 
 
