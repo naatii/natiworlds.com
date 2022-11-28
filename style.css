@@ -12,7 +12,7 @@ body {
 #header {
     overflow: hidden;
     height: 22em;
-    margin-bottom: 4em;
+    margin-bottom: 5em;
     position: relative;
     z-index: 2;
 }
@@ -169,7 +169,6 @@ h2 {
 
 button{
     background-color: antiquewhite;
-    width: 50%;
     margin: 0 auto;
 }
 button:hover{
