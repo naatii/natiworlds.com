@@ -35,7 +35,7 @@ function validarEdad(){
         alert("Edad inválida")
         return false
     }
-    if(edad<=0){
+    if(edad<=18){
         alert("Edad inválida")
         return false
     }
