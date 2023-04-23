@@ -11,14 +11,13 @@ body {
 
 #header {
     overflow: hidden;
-    height: 22em;
-    margin-bottom: 5em;
+    height: 18em;
     position: relative;
     z-index: 2;
 }
 
 #header:before {
-    content: ' ';
+    content: '';
     display: block;
     position: absolute;
     left: 0;
@@ -27,20 +26,19 @@ body {
     height: 100%;
     z-index: 1;
     opacity: 0.6;
-    background: url("header.jpg") no-repeat;
+    background: url("..\img\header.jpg") no-repeat;
     background-position: 50% 50%;
     background-size: cover;
 }
 
 #logo {
     border: 1px solid black;
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: flex-start;
     position: absolute;
     left: 1%;
-    top: 1%;
     z-index: 3;
 }
 
@@ -94,6 +92,25 @@ a:hover {
     padding-right: 1em;
 }
 
+.genero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 90%;
+    margin: 0px auto 0 auto;
+    background: rgb(255, 235, 205);
+    box-shadow: 0 0 10px black;
+    border: 1px solid black;
+    padding: .5em 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
 .container {
     z-index: 10000;
     display: flex;
@@ -104,7 +121,6 @@ a:hover {
     /* justify-content: space-around; Espacio entre las capas*/
     justify-content: center;
     /*centramos las capas dentro del contenedor*/
-    margin: -40px 0;
 
 }
 
@@ -126,6 +142,24 @@ a:hover {
     margin: 10px;
 }
 
+.container .card-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    background-color: burlywood;
+    box-shadow: 0 0 4px black;
+    color: black;
+    border: 1px solid burlywood;
+    border-radius: 8px;
+    padding: 2em;
+    /*Para separar las capas*/
+    width: 50%;
+    /*Para las capas que estén casi vacias*/
+    margin:  -5em 10px 5em 10px;
+}
+
 h2 {
     background-color: blanchedalmond;
     box-shadow: 0 0 4px black;
@@ -139,10 +173,10 @@ h2 {
 
 
 .container div img {
-    width: 70%;
+    width: 100%;
     border-radius: 15px;
-    max-width: 150px;
-    height: 150px;
+    max-width: auto;
+    height: auto;
 }
 .container div img:hover{
     animation:  2s normal img;
@@ -195,6 +229,12 @@ button a:hover{
 }
 
 div figure {
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-content: space-between; */
+}
+div p {
     text-align: center;
     /* display: flex;
     flex-direction: column;
