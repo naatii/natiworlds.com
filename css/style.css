@@ -399,3 +399,23 @@ div p {
         height: 30px;
     }
 }
+@media screen and (max-height: 1180px) {
+    .genero{
+        top: 15%;
+    }
+}
+@media screen and (max-height: 900px) {
+    .genero{
+        top: 20%;
+    }
+}
+@media screen and (max-height: 800px) {
+    .genero{
+        top: 25%;
+    }
+}
+@media screen and (max-height: 600px) {
+    .genero{
+        top: 30%;
+    }
+}
