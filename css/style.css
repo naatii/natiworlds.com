@@ -414,6 +414,11 @@ div p {
         top: 25%;
     }
 }
+@media screen and (max-height: 750px) {
+    .genero{
+        top: 27%;
+    }
+}
 @media screen and (max-height: 600px) {
     .genero{
         top: 30%;
