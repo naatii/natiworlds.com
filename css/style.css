@@ -32,12 +32,13 @@ body {
 }
 
 #logo {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: flex-start;
     position: absolute;
     left: 1%;
+    top: 1%;
     z-index: 3;
 }
 
@@ -73,12 +74,12 @@ h1 {
     z-index: 2;
 }
 
-li {
+.nav-superior li {
     list-style: none;
     padding: 0 2em;
 }
 
-a {
+.nav-superior li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -86,7 +87,7 @@ a {
     transition: all .5s;
 }
 
-a:hover {
+.nav-superior li a:hover {
     color: blueviolet;
     padding-right: 1em;
 }
@@ -109,6 +110,17 @@ a:hover {
     z-index: 2;
 }
 
+.genero a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    transition: all .5s;
+}
+.genero a:hover{
+    color: blueviolet;
+    padding-right: 1em;
+} 
 
 .container {
     z-index: 10000;
@@ -135,7 +147,7 @@ a:hover {
     border-radius: 8px;
     padding: 2px;
     /*Para separar las capas*/
-    width: 25%;
+    width: 30%;
     min-height: 300px;
     /*Para las capas que estén casi vacias*/
     margin: 10px;
@@ -233,6 +245,14 @@ div figure {
     flex-direction: column;
     align-content: space-between; */
 }
+div figure a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    transition: all .5s;
+}
+
 div p {
     text-align: center;
     /* display: flex;
@@ -274,8 +294,97 @@ div p {
     padding:0 10em;
 }
 .nav-inferior li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
     font-size: 22px;
+    transition: all .5s;
 }
 .nav-inferior li a:hover{
-    padding-left: 1em;
+    color: blueviolet;
+    padding-right: 1em;
+}
+@media screen and (min-width:2000px) {
+    .genero{
+        top: 10%;
+    }
+}
+@media screen and (max-width:900px) {
+    .container .card{
+        width: 45%;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .footer{
+        display: block;
+        height: 58px;
+    }
+}
+@media screen and (max-width:600px) {
+    .container {
+        display: block;
+    }
+    .container .card{
+        margin: 1em auto;
+        width: 70%;
+    }
+    .nav-superior li{
+        padding: 0 .5em;
+    }
+    .nav-superior li a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:500px) {
+    .genero a{
+        font-size: 15px;
+    }
+    #logo{
+        width: 50px;
+        height: 50px;
+        top: 2%;
+    }
+}
+@media screen and (max-width:400px) {
+    #logo{
+        width: 30px;
+        height: 30px;
+        top: 4%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .nav-inferior li a{
+        font-size: 15px;
+    }
+    div p{
+        font-size: 10px;
+    }
+    .footer{
+        height: 40px;
+    }
+}
+@media screen and (max-width:300px) {
+    .nav-superior li a{
+        font-size: 10px;
+    }
+    .genero a{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    #logo{
+        top: 2%;
+    }
+    .nav-inferior li a{
+        font-size: 10px;
+    }
+    div p{
+        font-size: 8px;
+    }
+    .footer{
+        height: 30px;
+    }
 }
