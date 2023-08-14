@@ -1,4 +1,5 @@
 function validar(){
+    
     validarNumero()
     validarEmail()
     validarEdad()

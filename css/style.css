@@ -166,7 +166,7 @@ h1 {
     border-radius: 8px;
     padding: 2em;
     /*Para separar las capas*/
-    width: 50%;
+    width: 90%;
     /*Para las capas que estén casi vacias*/
     margin:  -5em 10px 5em 10px;
 }
@@ -332,6 +332,10 @@ div p {
         margin: 1em auto;
         width: 70%;
     }
+    .container .card-about{
+        margin: -10em auto 0 auto;
+        font-size: 10px;
+    }
     .nav-superior li{
         padding: 0 .5em;
     }
@@ -388,7 +392,7 @@ div p {
     }
     div p{
         font-size: 8px;
-        padding: 0 .7em;
+        padding: 0 2em;
 
     }
     .footer{
