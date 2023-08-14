@@ -424,3 +424,8 @@ div p {
         top: 30%;
     }
 }
+@media screen and (max-height: 500px) {
+    .genero{
+        top: 40%;
+    }
+}
