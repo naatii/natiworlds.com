@@ -363,6 +363,8 @@ div p {
     }
     div p{
         font-size: 10px;
+        padding: 0 1.3em;
+
     }
     .footer{
         height: 40px;
@@ -386,6 +388,8 @@ div p {
     }
     div p{
         font-size: 8px;
+        padding: 0 .7em;
+
     }
     .footer{
         height: 30px;
